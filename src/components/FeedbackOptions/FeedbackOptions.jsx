@@ -7,8 +7,7 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) =>
     </button>
   ));
 FeedbackOptions.propTypes = {
-  // консоль ругалась на isRequired в option, я его убрал
-  option: PropTypes.arrayOf(PropTypes.string),
+  options: PropTypes.arrayOf(PropTypes.string).isRequired,
   onLeaveFeedback: PropTypes.func.isRequired,
 };
 export default FeedbackOptions;
